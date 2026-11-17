@@ -1,8 +1,24 @@
-self.addEventListener('install', (e) => {
-  self.skipWaiting();
-});
-
-self.addEventListener('fetch', (e) => {
-  // Biarkan request diteruskan ke jaringan
-  e.respondWith(fetch(e.request));
-});
+{
+  "id": "/SuPerDiDi/index.html",
+  "name": "Surat Perjalanan Dinas Digital",
+  "short_name": "SuPerDiDi",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1a73e8",
+  "icons": [
+    {
+      "src": "./icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
